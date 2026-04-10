@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="czcionki.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            Margin="20">
+
+            <Label
+                Text="Właściwości czcionki"
+                BackgroundColor="#558B2F"
+                TextColor="white"
+                FontSize="Title"
+                HorizontalOptions="Fill"
+                FontAttributes="Bold"/>
+            
+            <Label
+                Text="Rozmiar: "
+                FontSize="Medium"
+                HorizontalOptions="Fill"/>
+
+            <Slider
+                x:Name="slider"
+                Minimum="0"
+                Maximum="40"
+                Value="1"
+                HorizontalOptions="Fill"
+                />
+
+            <ListView 
+                ItemsSource=""
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button
+                x:Name="strzalkiPrzycisk"
+                Text=">>" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="#558B2F"
+                TextColor="white"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
